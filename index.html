@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Sony Care</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active">
+                <img src="https://lh3.googleusercontent.com/d/16AYbCHBIv0EP_omzicPLseEhU0_U13kT" alt="Sony Camera"
+                    class="hero-bg">
+                <div class="hero-text">
+                    <h1 style="color:white">Sony Store</h1>
+                    <h2 style="color:white">My Sony Care<br>Better Safe Than Sorry</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/d/1o65dAA0i93xTw1N8SlQMFBGsSWimcoqh"
+                    alt="Sony Headphone &amp; Phone" class="hero-bg">
+                <div class="hero-text">
+                    <h1 style="color:white">My Sony Care</h1>
+                    <p style="color:white">ซื้อการขยายเวลาการรับประกัน <br> My Sony care
+                        ขยายประกัน<br>คุ้มครองสูงสุด 27 เดือน
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="hero-prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="hero-next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="hero-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+        </div>
+    </section>
+
+    <!-- Coverage -->
+    <section class="coverage">
+        <h2>คุ้มครองนานถึง 3 ปี</h2>
+        <h3>ซ่อมโดยผู้เชี่ยวชาญจากโซนี่และมั่นใจได้ในอะไหล่แท้ 100%</h3>
+
+        <div class="coverage-items">
+            <div class="item">
+                <img src="https://lh3.googleusercontent.com/d/19f8s1fRmypEpApTtd1_tTuuQI4Tlt7ky" alt="แตกหัก ตกหล่น">
+                <p>แตกหัก ตกหล่น</p>
+            </div>
+            <div class="item">
+                <img src="https://lh3.googleusercontent.com/d/1QRTqOJgsX98jFdbOTnemRa8hJnzWs8UZ" alt="เสียหายจากน้ำ">
+                <p>เสียหายจากน้ำ</p>
+            </div>
+            <div class="item">
+                <img src="https://lh3.googleusercontent.com/d/1y1DRvQOFLtfMKfCAgvf5IrDPi9rW5Hxm"
+                    alt="ไฟไหม้จากไฟฟ้าลัดวงจร">
+                <p>ไฟไหม้จากไฟฟ้าลัดวงจร</p>
+            </div>
+            <div class="item">
+                <img src="https://lh3.googleusercontent.com/d/14tW5LvcRBK7z6EKJO00nHQi7CIdkWv23"
+                    alt="ข้อบกพร่องในอุปกรณ์">
+                <p>ข้อบกพร่องในอุปกรณ์</p>
+            </div>
+        </div>
+
+        <!-- Mobile Gallery (hidden on desktop) -->
+        <div class="coverage-mobile-gallery">
+            <button class="cov-btn cov-prev" onclick="covSlide(-1)">&#10094;</button>
+            <div class="cov-viewport">
+                <div class="cov-track">
+                    <!-- clone of last -->
+                    <div class="cov-slide cov-clone">
+                        <img src="https://lh3.googleusercontent.com/d/14tW5LvcRBK7z6EKJO00nHQi7CIdkWv23" alt="">
+                    </div>
+                    <!-- real slides -->
+                    <div class="cov-slide">
+                        <img src="https://lh3.googleusercontent.com/d/19f8s1fRmypEpApTtd1_tTuuQI4Tlt7ky"
+                            alt="แตกหัก ตกหล่น">
+                    </div>
+                    <div class="cov-slide">
+                        <img src="https://lh3.googleusercontent.com/d/1QRTqOJgsX98jFdbOTnemRa8hJnzWs8UZ"
+                            alt="เสียหายจากน้ำ">
+                    </div>
+                    <div class="cov-slide">
+                        <img src="https://lh3.googleusercontent.com/d/1y1DRvQOFLtfMKfCAgvf5IrDPi9rW5Hxm"
+                            alt="ไฟไหม้จากไฟฟ้าลัดวงจร">
+                    </div>
+                    <div class="cov-slide">
+                        <img src="https://lh3.googleusercontent.com/d/14tW5LvcRBK7z6EKJO00nHQi7CIdkWv23"
+                            alt="ข้อบกพร่องในอุปกรณ์">
+                    </div>
+                    <!-- clone of first -->
+                    <div class="cov-slide cov-clone">
+                        <img src="https://lh3.googleusercontent.com/d/19f8s1fRmypEpApTtd1_tTuuQI4Tlt7ky" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="cov-btn cov-next" onclick="covSlide(1)">&#10095;</button>
+        </div>
+        <p class="cov-mobile-label">แตกหัก ตกหล่น</p>
+    </section>
+
+    <!-- Description -->
+    <section class="description">
+        <p>เมื่อซื้อ My Sony Care จะเพิ่มความคุ้มครองประกันสินค้าสูงสุดถึง 3 ปี
+            และเพิ่มคุ้มครองสินค้าเสียหายจากการแตกหัก เสียหายจากน้ำไฟฟ้าลัดวงจรจากไฟไหม้
+            หรือความผิดปกติที่เกิดจากข้อบกพร่องของอุปกรณ์ โดยคุ้มครองค่าบริการสูงสุด 80% ตามมูลค่าสินค้าบนใบเสร็จ</p>
+    </section>
+
+    <!-- Camera -->
+    <section class="product">
+        <div class="product-row">
+            <img src="https://lh3.googleusercontent.com/d/1kTvkOzItRrpaYzodH79TOQCPG7MG3gpl" alt="กล้อง Sony">
+            <div class="product-row-content">
+                <h1>กล้องและเลนส์</h1>
+                <a class="btn" onclick="toggleDetails(this)">ดูเพิ่มเติม</a>
+            </div>
+        </div>
+        <div class="product-details">
+            <h3>ตารางวงเงินสูงสุดที่คุ้มครอง</h3>
+            <!-- Coverage Summary -->
+            <div class="coverage-summary">
+                <div class="summary-items">
+
+                    <div class="summary-item">
+                        <span class="label">คุ้มครองสูงสุด</span>
+                        <div class="summary-bottom">
+                            <span class="year">ปีที่ 1</span>
+                            <span class="percent">80%*</span>
+                            <span class="price-condition">ตามมูลค่าสินค้าบนใบเสร็จ</span>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">วงเงินสูงสุด</span>
+                        <div class="summary-bottom">
+                            <span class="year">ปีที่ 2</span>
+                            <span class="percent">70%*</span>
+                            <span class="price-condition">ตามมูลค่าสินค้าบนใบเสร็จ</span>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">ขยายสูงสุด</span>
+                        <div class="summary-bottom">
+                            <span class="year">ปีที่ 3</span>
+                            <span class="percent">60%*</span>
+                            <span class="price-condition">ตามมูลค่าสินค้าบนใบเสร็จ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conditions">
+                <div class="condition-item">
+                    <h4>หมายเหตุ :</h4>
+                    <p>• หากราคาซ่อมสูงกว่าวงเงินความรับผิดชอบข้างต้น<br>
+                        ลูกค้าต้องชําระค่าบริการส่วนต่างโดยบริษัทจะให้บริการซ่อมแซมตามวงเงินสูงสุดเท่านั้น <br>
+                        •
+                        การบริการนี้จะโอนไปยังอุปกรณ์ที่ท่านได้รับการเปลี่ยนใหม่จากเราหากอุปกรณ์ซึ่งซื้อใหม่จากเรามีความชํารุดบกพร่อง
+                        ณ เวลาที่ซื้อตามข้อกําหนดและเงื่อนไขการให้บริการนี้
+                        โดยการสมัครบริการนี้ ถือว่าคุณยอมรับว่าคุณได้อ่านและทําความเข้าใจข้อกําหนดทั้งหมด
+                        ในบรรดาเงื่อนไขและข้อกําหนดการบริการโซนี่แคร์ (Sony Store Care) รวมถึงแต่ไม่จํากัดเพียงการใช้งาน
+                        และนโยบายความเป็นส่วนตัวซึ่งมีผลบังคับใช้และผูกพันตามกฎหมายกับคุณ
+                    </p>
+                </div>
+                <div class="condition-item">
+                    <h4>เงื่อนไขและข้อยกเว้น</h4>
+                    <p>สําหรับสินค้าที่ซื้อจาก Sony Store, Sony Store Online<br>
+                        • ที่ได้รับอนุญาตจากบริษัทภายในประเทศไทยเท่านั้น<br>
+                        • ลูกค้าต้องเก็บใบเสร็จและสัญญาบริการเพื่อยืนยันและขอรับบริการ <br>
+                        •
+                        จํากัดเพียงอุปกรณ์ที่คุณซื้อแล้วแต่ยังมิได้นําออกไปจากร้านค้าทันทีหรือมีการส่งมอบให้แก่คุณในภายหลังโดยที่คุณยังไม่ได้เปิดใช้งานก่อนหรือในวันที่ส่งมอบหรืออุปกรณ์ซึ่งได้รับการเปลี่ยนใหม่จากเราเมื่อคุณได้ร้องขอให้เปลี่ยนอุปกรณ์ให้ทันทีขณะส่งมอบหรือภายใน
+                        7 วันนับแต่วันรับสินค้าเดิม
+                    </p>
+                </div>
+            </div>
+
+            <div class="campaign-condition">
+                <img src="https://lh3.googleusercontent.com/d/1D9DoKgQYIAlmMhGKBCNC0HOgUqQBB9Wt"
+                    alt="logo Mitsui Sumitomo Insurance">
+                <p>This campaign/service is in cooperation with insured by Mitsui Sumitomo Insurance Co.,Ltd. Thailand
+                    Branch <br>
+                    แคมเปญนี้อยู่ภายใต้ความร่วมมือ และ ความคุ้มครองโดย บริษัท มิตซุย สุมิโมโต อินชัวรันซ์ จำกัด
+                    สาขาประเทศไทย
+                </p>
+            </div>
+
+            <div class="conditions-links">
+                <div class="condition-item">
+                    <h4>ข้อกำหนดและเงื่อนไขกำรให้บริการมายโซนี่แคร์(My SonyCare)</h4>
+                </div>
+                <div class="condition-item">
+                    <h4>Terms and Conditions for My Sony Care(English Version)</h4>
+                </div>
+            </div>
+
+            <!-- Case Study -->
+            <div class="case-title">Case Study</div>
+            <div class="case-study-content">
+                <div class="case-card">
+                    <img src="https://lh3.googleusercontent.com/d/1xQmYl9P3K4M9AF_-4LQ-uAduZfiZg9iN" alt="ILCE-7RM2">
+                    <div class="case-info">
+                        <h4>ILCE-7RM2</h4>
+                        <p>ราคาซื้อสินค้า 69,990.-</p>
+                        <p>วงเงินที่คุ้มครอง (80%) 55,992.-</p>
+                        <p class="detail">เครื่องตก หน้าจอ LCD มุมบนมีรอยแตกร้าว ปุ่มบางปุ่มกดใช้งานไม่ได้</p>
+
+                        <table class="compare-table">
+                            <tr class="ok">
+                                <td><span>มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 0 บาท</strong></td>
+                            </tr>
+                            <tr class="no">
+                                <td><span>ไม่มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 6,196.37 บาท</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="case-card">
+                    <img src="https://lh3.googleusercontent.com/d/181Qwp2jr-lUCtpUEubYgmEz_AvED0W6P" alt="ILCE-7M4">
+                    <div class="case-info">
+                        <h4>ILCE-7M4</h4>
+                        <p>ราคาซื้อสินค้า 82,990.-</p>
+                        <p>วงเงินที่คุ้มครอง (80%) 66,392.-</p>
+                        <p class="detail">เครื่องตกน้ำ</p>
+
+                        <table class="compare-table">
+                            <tr class="ok">
+                                <td><span>มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 0 บาท</strong></td>
+                            </tr>
+                            <tr class="no">
+                                <td><span>ไม่มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 62,476.23 บาท</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="case-card">
+                    <img src="https://lh3.googleusercontent.com/d/1E-O2extWsS_xOt5AUqQoDnRTEYpf7SLi" alt="SEL100400GM">
+                    <div class="case-info">
+                        <h4>SEL100400GM</h4>
+                        <p>ราคาซื้อสินค้า 82,990.-</p>
+                        <p>วงเงินที่คุ้มครอง (80%) 71,992.-</p>
+                        <p class="detail">เลนส์ตกกระแทก กรอบหน้าเลนส์ด้านข้างยุบ</p>
+
+                        <table class="compare-table">
+                            <tr class="ok">
+                                <td><span>มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 0 บาท</strong></td>
+                            </tr>
+                            <tr class="no">
+                                <td><span>ไม่มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 6,437.12 บาท</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="case-card">
+                    <img src="https://lh3.googleusercontent.com/d/1OpOas9dyuXv2E1kAlYsBkKXrzwpCaZKH" alt="SEL2470GM2">
+                    <div class="case-info">
+                        <h4>SEL2470GM2</h4>
+                        <p>ราคาซื้อสินค้า 72,990.-</p>
+                        <p>วงเงินที่คุ้มครอง (80%) 58,392.-</p>
+                        <p class="detail">เครื่องตกน้ำ</p>
+
+                        <table class="compare-table">
+                            <tr class="ok">
+                                <td><span>มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 872.79 บาท</strong></td>
+                            </tr>
+                            <tr class="no">
+                                <td><span>ไม่มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 59,264.79 บาท</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="case-card">
+                    <img src="https://lh3.googleusercontent.com/d/11-9whPmaPyme_kpux3PwFjXdBZvBTJVt" alt="ZV-E10L">
+                    <div class="case-info">
+                        <h4>ZV-E10L</h4>
+                        <p>ราคาซื้อสินค้า 25,990.-</p>
+                        <p>วงเงินที่คุ้มครอง (80%) 20,792.-</p>
+                        <p class="detail">เครื่องตกน้ำ ระบบโพกัสไม่ทำงาน เลนส์ค้าง</p>
+
+                        <table class="compare-table">
+                            <tr class="ok">
+                                <td><span>มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 5,039.94 บาท</strong></td>
+                            </tr>
+                            <tr class="no">
+                                <td><span>ไม่มีประกัน My Sony Care</span></td>
+                                <td><strong>ค่าซ่อม 25,831.94 บาท</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Table -->
+            <h3 class="price-title">ราคาประกัน Camera & Lens</h3>
+            <div class="price-tables-container">
+                <table class="price-table">
+                    <tr>
+                        <th>ช่วงราคาสินค้า</th>
+                        <th>ราคาประกันรวม 3 ปี</th>
+                        <th>เฉลี่ยต่อเดือน</th>
+                    </tr>
+                    <tr>
+                        <td>10,000 - 15,000</td>
+                        <td>1,350</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>15,001 - 20,000</td>
+                        <td>1,800</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>20,001 - 25,000</td>
+                        <td>2,250</td>
+                        <td>63</td>
+                    </tr>
+                    <tr>
+                        <td>25,001 - 30,000</td>
+                        <td>2,700</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>30,001 - 40,000</td>
+                        <td>3,600</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>40,001 - 50,000</td>
+                        <td>4,500</td>
+                        <td>125</td>
+                    </tr>
+                    <tr>
+                        <td>50,001 - 60,000</td>
+                        <td>5,400</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>60,001 - 70,000</td>
+                        <td>6,300</td>
+                        <td>175</td>
+                    </tr>
+                    <tr>
+                        <td>70,001 - 80,000</td>
+                        <td>7,200</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>80,001 - 90,000</td>
+                        <td>8,100</td>
+                        <td>225</td>
+                    </tr>
+                    <tr>
+                        <td>90,001 - 100,000</td>
+                        <td>9,000</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>100,001 - 110,000</td>
+                        <td>9,900</td>
+                        <td>275</td>
+                    </tr>
+                    <tr>
+                        <td>110,001 - 120,000</td>
+                        <td>10,800</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>120,001 - 130,000</td>
+                        <td>11,700</td>
+                        <td>325</td>
+                    </tr>
+                    <tr>
+                        <td>130,001 - 140,000</td>
+                        <td>12,600</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>140,001 - 150,000</td>
+                        <td>13,500</td>
+                        <td>375</td>
+                    </tr>
+                    <tr>
+                        <td>150,001 - 160,000</td>
+                        <td>14,400</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>170,001 - 180,000</td>
+                        <td>16,200</td>
+                        <td>450</td>
+                    </tr>
+                    <tr>
+                        <td>190,001 - 200,000</td>
+                        <td>18,000</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>220,001 - 230,000</td>
+                        <td>20,700</td>
+                        <td>575</td>
+                    </tr>
+                    <tr>
+                        <td>400,001 - 460,000</td>
+                        <td>41,400</td>
+                        <td>1,150</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio -->
+    <section class="product">
+        <h2>สินค้าเครื่องเสียงเฉพาะรุ่นที่ร่วมรายการ<br>ขยายประกันคุ้มครองสูงสุด 27 เดือน</h2>
+        <div class="product-row">
+            <img src="https://lh3.googleusercontent.com/d/1cpwnatxNciszxkH2gRedWK_5GHqQr2pn" alt="หูฟัง Sony">
+            <a class="btn" onclick="toggleDetails(this)">ดูเพิ่มเติม</a>
+        </div>
+        <div class="product-details">
+            <!-- Price Table -->
+            <h3 class="price-title">ตารางราคาประกันสินค้า</h3>
+            <div class="centers">
+                <table class="price-table">
+                    <tr>
+                        <th>ราคาสินค้า</th>
+                        <th>ราคาประกัน</th>
+                    </tr>
+                    <tr>
+                        <td>WH-1000XM6</td>
+                        <td>990.-</td>
+                    </tr>
+                    <tr>
+                        <td>WH-1000XM5</td>
+                        <td>990.-</td>
+                    </tr>
+                    <tr>
+                        <td>WF-1000XM6</td>
+                        <td>990.-</td>
+                    </tr>
+                    <tr>
+                        <td>WF-1000XM5</td>
+                        <td>690.-</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="price-note">
+                <p>*คุ้มครองตามมูลค่าสินค้าบนใบเสร็จ สูงสุดไม่เกินราคาซ่อมจริง</p>
+                <p>*(Term English) Coverage is based on the value of the product on the receipt, up to the actual repair
+                    cost</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile -->
+    <section class="product">
+        <h2>สินค้ามือถือเฉพาะรุ่นที่ร่วมรายการ<br>ขยายประกันคุ้มครองสูงสุด 27 เดือน</h2>
+        <div class="product-row">
+            <img src="https://lh3.googleusercontent.com/d/1DAMp21bg09fK9-ZHfIoIfRo0sj5tdsh6" alt="มือถือ Sony">
+            <a class="btn" onclick="toggleDetails(this)">ดูเพิ่มเติม</a>
+        </div>
+        <div class="product-details">
+            <!-- Price Table -->
+            <h3 class="price-title">ตารางราคาประกันสินค้า</h3>
+            <div class="centers">
+                <table class="price-table">
+                    <tr>
+                        <th>ราคาสินค้า</th>
+                        <th>ราคาประกัน</th>
+                    </tr>
+                    <tr>
+                        <td>Xperia 1M7</td>
+                        <td>2,990.-</td>
+                    </tr>
+                    <tr>
+                        <td>Xperia 10M7</td>
+                        <td>990.-</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="price-note">
+                <p>*คุ้มครองตามมูลค่าสินค้าบนใบเสร็จ สูงสุดไม่เกินราคาซ่อมจริง</p>
+                <p>*(Term English) Coverage is based on the value of the product on the receipt, up to the actual repair
+                    cost</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>My Sony Care</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="icon"><img src="https://lh3.googleusercontent.com/d/1NcnnUnDZYCBvJZFqkYXtBlR3w3RzLWxN"
+                        alt="fix" style="width: 30%; height: auto;"></div>
+                <p>ซ่อมโดยผู้เชี่ยวชาญจากโซนี่</p>
+            </div>
+            <div class="feature">
+                <div class="icon"><img src="https://lh3.googleusercontent.com/d/1rQhlqslARsQhWU2RrNRggn1AxMs0DQ4e"
+                        alt="fix" style="width: 30%; height: auto;"></div>
+                <p>มั่นใจอะไหล่แท้ 100%</p>
+            </div>
+            <div class="feature">
+                <div class="icon"><img src="https://lh3.googleusercontent.com/d/1NVrSecoh_76wEe_r9Ucjoi1xGdrMYWzm"
+                        alt="fix" style="width: 30%; height: auto;"></div>
+                <p>คุ้มครองสูงสุดถึง 80%</p>
+            </div>
+            <div class="feature">
+                <div class="icon"><img src="https://lh3.googleusercontent.com/d/1om7ZtJOzunp0bTgEm7k1MtsykLr_ZWVR"
+                        alt="fix" style="width: 30%; height: auto;"></div>
+                <p>คุ้มครองนานสูงสุด 3 ปี</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Centers -->
+    <section class="centers">
+        <h2>รายชื่อศูนย์ให้บริการทั่วประเทศ</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>จุดบริการรับ-ส่งเครื่องซ่อมโซนี่</th>
+                    <th>เวลาทำการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ศูนย์บริการโซนี่ สาขาเพชรบุรีตัดใหม่ กรุงเทพมหานคร</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการโซนี่ สาขาสยามพารากอน กรุงเทพมหานคร</td>
+                    <td>จันทร์ - อาทิตย์<br>11:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการโซนี่ สาขาฟิวเจอร์ปาร์ครังสิต จังหวัด ปทุมธานี</td>
+                    <td>จันทร์ - อาทิตย์<br>11:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการแต่งตั้ง เชียงใหม่ จังหวัด เชียงใหม่</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการแต่งตั้ง ฟู่บิช จังหวัด อุดรธานี</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการแต่งตั้ง สมาร์ทฟิกซ์ จังหวัด นครราชสีมา</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการแต่งตั้ง พัทยา จังหวัด ชลบุรี</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการแต่งตั้ง สุราษฎร์ธานี จังหวัด สุราษฎร์ธานี</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการแต่งตั้ง ภูเก็ต จังหวัด ภูเก็ต</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>ศูนย์บริการแต่งตั้ง หาดใหญ่ จังหวัด สงขลา</td>
+                    <td>จันทร์ - เสาร์<br>08:00 - 17:30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+        // Coverage Mobile Gallery (infinite loop)
+        (function () {
+            var gallery = document.querySelector('.coverage-mobile-gallery');
+            if (!gallery) return;
+            var covTrack = gallery.querySelector('.cov-track');
+            var covLabelEl = document.querySelector('.cov-mobile-label');
+            var covLabels = [
+                'แตกหัก ตกหล่น',
+                'เสียหายจากน้ำ',
+                'ไฟไหม้จากไฟฟ้าลัดวงจร',
+                'ชิ้นส่วนพร้อมในอุปกรณ์'
+            ];
+            // track order: [clone-last, real-0..3, clone-first]
+            var realCount = covLabels.length; // 4
+            var covPos = 1; // 1 = real slide 0
+            var sliding = false;
+
+            function covCenter(animate) {
+                var items = covTrack.children;
+                var viewport = covTrack.parentElement;
+                var vw = viewport.offsetWidth;
+                var el = items[covPos];
+                var offset = el.offsetLeft + el.offsetWidth / 2 - vw / 2;
+                if (!animate) {
+                    // freeze both track AND slide transitions, force reflow, then jump
+                    gallery.classList.add('cov-no-anim');
+                    covTrack.style.transition = 'none';
+                    void covTrack.offsetWidth;
+                    covTrack.style.transform = 'translateX(' + (-offset) + 'px)';
+                    // re-enable after two frames so the resumed transition doesn't fire
+                    requestAnimationFrame(function () {
+                        requestAnimationFrame(function () {
+                            gallery.classList.remove('cov-no-anim');
+                            covTrack.style.transition = '';
+                        });
+                    });
+                } else {
+                    covTrack.style.transform = 'translateX(' + (-offset) + 'px)';
+                }
+            }
+
+            function covMarkActive() {
+                var items = covTrack.children;
+                for (var i = 0; i < items.length; i++) {
+                    items[i].classList.remove('active');
+                }
+                items[covPos].classList.add('active');
+                var realIdx = (covPos - 1 + realCount) % realCount;
+                if (covLabelEl) covLabelEl.textContent = covLabels[realIdx];
+            }
+
+            covTrack.addEventListener('transitionend', function (e) {
+                if (e.propertyName !== 'transform') return;
+                if (covPos === 0) {
+                    covPos = realCount; covMarkActive(); covCenter(false);
+                } else if (covPos === realCount + 1) {
+                    covPos = 1; covMarkActive(); covCenter(false);
+                }
+                sliding = false;
+            });
+
+            window.covSlide = function (dir) {
+                if (sliding) return;
+                sliding = true;
+                covPos += dir;
+                covMarkActive();
+                covCenter(true);
+            };
+
+            window.covGoTo = function (idx) {
+                covPos = idx + 1;
+                covMarkActive();
+                covCenter(true);
+            };
+
+            covMarkActive();
+            covCenter(false);
+            window.addEventListener('resize', function () { covCenter(false); });
+        })();
+
+        // Hero Slideshow
+        (function () {
+            var slides = document.querySelectorAll('.hero .slide');
+            var dots = document.querySelectorAll('.hero .dot');
+            var current = 0;
+            var timer = setInterval(function () { moveSlide(current + 1); }, 5000);
+
+            function moveSlide(index) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = (index + slides.length) % slides.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+            }
+
+            function restart() {
+                clearInterval(timer);
+                timer = setInterval(function () { moveSlide(current + 1); }, 5000);
+            }
+
+            window.changeSlide = function (dir) { moveSlide(current + dir); restart(); };
+            window.goToSlide = function (idx) { moveSlide(idx); restart(); };
+        })();
+
+        function toggleDetails(button) {
+            const productSection = button.closest('.product');
+            const details = productSection.querySelector('.product-details');
+
+            if (details.classList.contains('show')) {
+                details.classList.remove('show');
+                button.textContent = 'ดูเพิ่มเติม';
+            } else {
+                details.classList.add('show');
+                button.textContent = 'ซ่อนรายละเอียด';
+            }
+        }
+
+        function toggleCaseStudy(button) {
+            const caseStudyContent = button.nextElementSibling;
+
+            if (caseStudyContent.classList.contains('show')) {
+                caseStudyContent.classList.remove('show');
+                button.textContent = 'Case Study';
+            } else {
+                caseStudyContent.classList.add('show');
+                button.textContent = 'ซ่อน Case Study';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
