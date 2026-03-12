@@ -157,12 +157,11 @@ body {
 }
 
 
-/* Hero Navigation */
+/* Navigation Arrows */
 .hero-prev,
 .hero-next {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.25);
     color: #fff;
@@ -172,10 +171,23 @@ body {
     cursor: pointer;
     z-index: 10;
     border-radius: 4px;
-    -webkit-transition: background 0.3s;
     transition: background 0.3s;
     line-height: 1;
 }
+
+.hero-prev:hover,
+.hero-next:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.hero-prev {
+    left: 20px;
+}
+
+.hero-next {
+    right: 20px;
+}
+
 
 .hero-prev:hover,
 .hero-next:hover {
