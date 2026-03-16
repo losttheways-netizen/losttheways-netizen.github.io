@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'SST';
-    src: url('font/sst-roman.otf') format('opentype');
+    src: url('https://lh3.googleusercontent.com/d/1ZMKhsp3IhxUP6aPqq0pSbSW3OOgCUp7n') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,28 +32,28 @@
 
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('font/sukhumvitset.ttc') format('truetype');
+    src: url('https://lh3.googleusercontent.com/d/12h43vFQl-Zx2krPGT-BEmBbxJvpH5FYU') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('font/sukhumvitset-medium.ttf') format('truetype');
+    src: url('https://lh3.googleusercontent.com/d/1CO8gPhbClrP9PCeh-9O366THrGvsAvS8') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('font/sukhumvitset-semibold.ttf') format('truetype');
+    src: url('https://lh3.googleusercontent.com/d/1Cg5Bi2FP8jA6V55UDnbZBqquckWawmZ0') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('font/sukhumvitset-bold.ttf') format('truetype');
+    src: url('https://lh3.googleusercontent.com/d/1wnpDdxt0cpOVQCqXYr4JA51QAYRERHPo') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
