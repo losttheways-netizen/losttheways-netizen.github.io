@@ -31,8 +31,8 @@
 }
 
 @font-face {
-    font-family: 'SukhumvitSet';
-    src: url('font/SukhumvitSet.ttc') format('truetype');
+    font-family: 'NotoSansThai';
+    src: url('font/NotoSansThai-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
