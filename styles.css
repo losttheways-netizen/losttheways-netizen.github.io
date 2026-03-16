@@ -31,28 +31,28 @@
 }
 
 @font-face {
-    font-family: 'Sukhumvit Set';
+    font-family: 'SukhumvitSet';
     src: url('font/sukhumvitSet.ttc') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sukhumvit Set';
+    font-family: 'SukhumvitSet';
     src: url('font/sukhumvitSet-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sukhumvit Set';
+    font-family: 'SukhumvitSet';
     src: url('font/sukhumvitSet-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sukhumvit Set';
+    font-family: 'SukhumvitSet';
     src: url('font/SukhumvitSet-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
