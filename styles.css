@@ -701,7 +701,6 @@ body {
     font-weight: 500;
     font-size: 34px !important;
     white-space: nowrap;
-    display: inline-block;
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
