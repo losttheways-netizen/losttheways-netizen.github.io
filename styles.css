@@ -699,7 +699,7 @@ body {
     border-radius: 30px;
     text-decoration: none;
     font-weight: 500;
-    font-size: 34px !important;
+    font-size: 26px !important;
     white-space: nowrap;      /* บังคับให้ข้อความแสดงบรรทัดเดียว */
     display: inline-block;    /* หรือ flex เพื่อให้การจัดวางตรงบรรทัด */
     padding: 10px;            /* เพิ่มระยะห่างให้ปุ่มดูดี */
