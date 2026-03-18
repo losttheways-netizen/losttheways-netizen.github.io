@@ -701,8 +701,6 @@ body {
     font-weight: 500;
     font-size: 34px !important;
     white-space: nowrap;      /* บังคับให้ข้อความแสดงบรรทัดเดียว */
-    overflow: hidden;         /* ซ่อนข้อความส่วนที่เกิน */
-    text-overflow: ellipsis;  /* (ตัวเลือก) แสดง ... เมื่อข้อความยาวเกิน */
     display: inline-block;    /* หรือ flex เพื่อให้การจัดวางตรงบรรทัด */
     padding: 10px;            /* เพิ่มระยะห่างให้ปุ่มดูดี */
     transition: all 0.3s ease;
