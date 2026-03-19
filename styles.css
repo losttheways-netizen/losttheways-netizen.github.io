@@ -1510,7 +1510,7 @@ body {
 
     .features-grid {
         grid-template-columns: 2, 1fr;
-        gap: 15px;
+        gap: 10px;
     }
 
     .feature {
