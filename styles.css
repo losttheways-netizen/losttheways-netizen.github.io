@@ -133,6 +133,10 @@ body {
     z-index: 0;
 }
 
+.mobile-img {
+    display: none;
+}
+
 .slide::before {
     content: '';
     position: absolute;
@@ -1317,6 +1321,19 @@ body {
     /* Hero */
     .hero {
         height: 350px;
+    }
+   
+    .hero-bg {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
     }
 
     .slide {
