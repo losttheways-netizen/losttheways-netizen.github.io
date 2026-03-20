@@ -1320,7 +1320,7 @@ body {
 
     /* Hero */
     .hero {
-        height: 350px;
+        height: 100%;
     }
    
     .hero-bg {
